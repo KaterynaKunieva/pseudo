@@ -8,7 +8,7 @@
 *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; /*розмір блока включає в себе padding i border, але не margin*/
+  box-sizing: border-box; 
 }
 :focus,
 :active {
