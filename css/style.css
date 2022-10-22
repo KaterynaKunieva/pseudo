@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; /*розмір блока включає в себе padding i border, але не margin*/
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.container {
+  margin: 100px 300px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  color: #273d46;
+}
+
+/* List */
+.list__item::before {
+  content: "";
+  width: 23px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  border-left: 7px solid #80b7b3;
+  border-bottom: 7px solid #80b7b3;
+  transform: rotate(-45deg);
+}
+.list__item:hover {
+  cursor: pointer;
+  color: red;
+}
+.list__item:hover::before {
+  border-color: red;
+}
+.list__item:nth-child(1) {
+  text-decoration: line-through;
+}
+.list__item:nth-child(2) {
+  font-weight: bold;
+}
+.list__item:nth-child(3) {
+  font-style: italic;
+}
+.list__item:nth-child(4) {
+  text-transform: uppercase;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin: 137px 0 118px 25px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #80b7b3;
+  width: 200px;
+  height: 44px;
+  font-size: 14px;
+  border-radius: 25px;
+  line-height: 40px;
+  padding-top: 2px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  text-align: center;
+}
+.btn::after {
+  content: url("../img/link_03.png");
+  margin-left: 11px;
+}
+.btn:hover {
+  background-color: #3a5856;
+}
+/* Text */
+.text {
+  margin-bottom: 47px;
+}
+.text__line {
+  margin-left: 7px;
+}
+.text__line::first-line {
+  color: red;
+}
+.text__letter::first-letter {
+  color: red;
+}
